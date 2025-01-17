@@ -6,6 +6,39 @@
     <title>taskList</title>
 </head>
 <body>
+    <form action="" method="post">
+        <div class="step__task">
+            <label for="name__task">Task name</label>
+            <input type="text" name="name__task" id="name__task">
+     
+        </div>
+        
+        <div class="step__task">
+            <label for="decription__task">Task description</label>
+            <textarea name="decription__task" id="decription__task"></textarea>
+        </div>
+        <div class="step__task">
+            <label for="duration__task">Durée</label>
+            <input type="number" name="duration__task" id="duration__task" min="0" max="120" step="5">
+        </div>
+        <div class="step__task">
+            <label for="status__task">Statut</label>
+            <select name="status_task" id="status_task">
+                <option value="status__todo">A faire</option>
+                <option value="status__inprogress">En cours</option>
+                <option value="status__corrected">A rectifier</option>
+                <option value="status__finish">Terminé</option>
+            </select>
+
+        </div>
+       
+
+
+        <button type="submit" name="submit">Enregistrer la tâche</button>
+    </form>
+
+
+
     <script src="script.js"></script>
 </body>
 </html>
